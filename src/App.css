@@ -1,0 +1,33 @@
+.scroll-container {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: var(--color-bg);
+}
+
+.scroll-track {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100vh;
+  width: max-content;
+  will-change: transform;
+}
+
+@media (max-width: 900px) {
+  .scroll-container {
+    position: relative;
+    inset: auto;
+    height: auto;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+  .scroll-track {
+    flex-direction: column;
+    width: 100vw;
+    height: auto;
+    transform: none !important;
+  }
+}

@@ -1,0 +1,113 @@
+.logo {
+  position: fixed;
+  z-index: 200;
+  pointer-events: none;
+  transition:
+    top 1.4s cubic-bezier(0.65, 0, 0.35, 1) 0.4s,
+    left 1.4s cubic-bezier(0.65, 0, 0.35, 1) 0.4s,
+    width 1.4s cubic-bezier(0.65, 0, 0.35, 1) 0.4s,
+    transform 1.4s cubic-bezier(0.65, 0, 0.35, 1) 0.4s,
+    filter 0.5s ease;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+}
+
+/* Adapta color del logo según el panel */
+.light {
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.12));
+}
+
+.dark {
+  filter: brightness(0) invert(1) drop-shadow(0 2px 8px rgba(0, 0, 0, 0.35));
+}
+
+.loading {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 640px;
+}
+
+.loaded {
+  top: 24px;
+  left: 28px;
+  transform: translate(0, 0);
+  width: 290px;
+}
+
+/* Logo secundario Maxi Games — aparece tras el morphing */
+.secondary {
+  position: fixed;
+  z-index: 200;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  top: 165px;
+  left: 40px;
+  transition: filter 0.5s ease;
+}
+
+.secondary.light {
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.12));
+}
+
+.secondary.dark {
+  filter: brightness(0) invert(1) drop-shadow(0 2px 8px rgba(0, 0, 0, 0.35));
+}
+
+.secondaryDivider {
+  width: 1px;
+  height: 40px;
+  background: currentColor;
+  opacity: 0.25;
+}
+
+.secondary img {
+  width: 110px;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 1280px) {
+  .loaded {
+    width: 240px;
+  }
+
+  .secondary {
+    top: 140px;
+    left: 36px;
+  }
+
+  .secondary img {
+    width: 95px;
+  }
+}
+
+@media (max-width: 900px) {
+  .loading {
+    width: 300px;
+  }
+  .loaded {
+    top: 14px;
+    left: 18px;
+    width: 150px;
+  }
+
+  .secondary {
+    top: 18px;
+    left: 180px;
+    gap: 0;
+  }
+
+  .secondaryDivider {
+    display: none;
+  }
+
+  .secondary img {
+    width: 52px;
+  }
+}
