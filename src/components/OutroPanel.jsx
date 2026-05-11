@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { useLang } from '../i18n/LanguageContext';
+import { buildWhatsappUrl } from '../utils/whatsapp';
 import styles from './OutroPanel.module.css';
 
 export default function OutroPanel({ index }) {
@@ -56,7 +57,12 @@ export default function OutroPanel({ index }) {
           viewport={{ once: true, amount: 0.4 }}
           transition={{ duration: 1, delay: 0.55, ease: [0.16, 1, 0.3, 1] }}
         >
-          <a className={styles.primary} href="#contacto">
+          <a
+            className={styles.primary}
+            href={buildWhatsappUrl(t.outro.contactMessage)}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <span>{t.outro.cta}</span>
             <svg width="20" height="10" viewBox="0 0 20 10" fill="none">
               <path

@@ -23,6 +23,9 @@ export const translations = {
       faresFrom: 'Tarifas desde',
       perPerson: 'por persona',
       duration: 'Duración',
+      contact: 'Contacto',
+      contactMessage: (destino) =>
+        `¡Hola Hub Travel! 👋 Estoy participando de Maxi Games 2026 y me interesa el premio a ${destino}. ¿Me podés dar más información sobre fechas, condiciones y disponibilidad? ¡Gracias!`,
     },
     outro: {
       eyebrow: '¿Listo para tu premio?',
@@ -32,6 +35,8 @@ export const translations = {
       text:
         'Cada destino es una oportunidad de empezar a coleccionar momentos. Maxi Games convierte tus puntos en experiencias inolvidables.',
       cta: 'Solicitar información',
+      contactMessage:
+        '¡Hola Hub Travel! 👋 Quiero saber más sobre Maxi Games 2026 y los destinos disponibles como premios. ¿Me cuentan los detalles?',
       copyright: '© 2026 Hub Travel',
       disclaimer:
         'Tarifas en pesos argentinos por persona, sujetas a disponibilidad.',
@@ -61,6 +66,9 @@ export const translations = {
       faresFrom: 'Fares from',
       perPerson: 'per person',
       duration: 'Duration',
+      contact: 'Contact',
+      contactMessage: (destino) =>
+        `Hi Hub Travel! 👋 I'm taking part in Maxi Games 2026 and I'm interested in the ${destino} prize. Could you share more info about dates, conditions and availability? Thanks!`,
     },
     outro: {
       eyebrow: 'Ready to claim your prize?',
@@ -70,6 +78,8 @@ export const translations = {
       text:
         'Every destination is a chance to start collecting moments. Maxi Games turns your points into unforgettable experiences.',
       cta: 'Request information',
+      contactMessage:
+        'Hi Hub Travel! 👋 I want to know more about Maxi Games 2026 and the travel prizes. Could you share the details?',
       copyright: '© 2026 Hub Travel',
       disclaimer:
         'Fares in Argentine pesos per person, subject to availability.',
