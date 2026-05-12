@@ -9,42 +9,33 @@ export default function OutroPanel({ index }) {
   return (
     <section className={styles.outro} data-panel-index={index}>
       <div className={styles.inner}>
-        <motion.div
-          className={styles.headerRow}
+        <motion.a
+          href="https://hubtravel.travelconnect.com.ar"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.partnerLink}
           initial={{ opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.4 }}
           transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
         >
+          <span className={styles.partnerText}>{t.outro.partnerText}</span>
           <img
             src="/logoPngSf.png"
             alt="Hub Travel"
-            className={styles.headerLogo}
+            className={styles.partnerLogo}
           />
-          <a
-            href="https://hubtravel.travelconnect.com.ar"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.partnerLink}
+          <svg
+            className={styles.partnerArrow}
+            viewBox="0 0 14 14"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="1.4"
+            aria-hidden="true"
           >
-            <span className={styles.partnerText}>{t.outro.partnerText}</span>
-            <img
-              src="/logoPngSf.png"
-              alt="Hub Travel"
-              className={styles.partnerLogo}
-            />
-            <svg
-              className={styles.partnerArrow}
-              viewBox="0 0 14 14"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.4"
-              aria-hidden="true"
-            >
-              <path d="M3 11 L11 3 M6 3 H11 V8" />
-            </svg>
-          </a>
-        </motion.div>
+            <path d="M3 11 L11 3 M6 3 H11 V8" />
+          </svg>
+        </motion.a>
 
         <motion.span
           className={styles.eyebrow}
