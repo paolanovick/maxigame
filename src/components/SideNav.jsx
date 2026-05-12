@@ -4,6 +4,8 @@ import { destinos } from '../data/destinos';
 import { useLang, pickLang } from '../i18n/LanguageContext';
 import styles from './SideNav.module.css';
 
+const HUB_URL = 'https://hubtravel.travelconnect.com.ar';
+
 export default function SideNav({
   progress,
   activeIndex,
@@ -55,6 +57,20 @@ export default function SideNav({
               </span>
             </button>
           ))}
+
+          <a
+            href={HUB_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={`${styles.item} ${styles.itemExternal}`}
+          >
+            <span className={styles.itemNum} aria-hidden="true">
+              <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="1.4">
+                <path d="M3 9 L9 3 M5 3 H9 V7" />
+              </svg>
+            </span>
+            <span className={styles.itemName}>{t.nav.external}</span>
+          </a>
         </nav>
 
         <div className={styles.bottomBlock}>
@@ -135,6 +151,21 @@ export default function SideNav({
                   </span>
                 </button>
               ))}
+
+              <a
+                href={HUB_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`${styles.drawerItem} ${styles.drawerItemExternal}`}
+                onClick={() => setMenuOpen(false)}
+              >
+                <span className={styles.drawerNum} aria-hidden="true">
+                  <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="1.4">
+                    <path d="M3 9 L9 3 M5 3 H9 V7" />
+                  </svg>
+                </span>
+                <span className={styles.drawerName}>{t.nav.external}</span>
+              </a>
 
               <div className={styles.drawerFooter}>
                 <button className={styles.drawerLang} onClick={toggle}>

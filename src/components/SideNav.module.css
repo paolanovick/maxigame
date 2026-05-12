@@ -118,6 +118,26 @@
   line-height: 1;
 }
 
+.itemExternal {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(247, 246, 246, 0.12);
+}
+
+.navLight .itemExternal {
+  border-top-color: rgba(26, 20, 20, 0.12);
+}
+
+.itemExternal .itemNum svg {
+  width: 11px;
+  height: 11px;
+  display: block;
+}
+
+.itemExternal .itemName {
+  font-style: italic;
+}
+
 .bottomBlock {
   display: flex;
   flex-direction: column;
@@ -351,6 +371,22 @@
   font-weight: 400;
   letter-spacing: -0.02em;
   line-height: 1;
+}
+
+.drawerItemExternal {
+  margin-top: 16px;
+  padding-top: 22px;
+  border-top: 1px solid rgba(247, 246, 246, 0.2);
+}
+
+.drawerItemExternal .drawerName {
+  font-style: italic;
+}
+
+.drawerItemExternal .drawerNum svg {
+  width: 14px;
+  height: 14px;
+  display: block;
 }
 
 .drawerFooter {

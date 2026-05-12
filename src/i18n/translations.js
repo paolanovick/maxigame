@@ -4,6 +4,7 @@ export const translations = {
       intro: 'Intro',
       languageLabel: 'ES',
       languageSwitch: 'EN',
+      external: 'Viaja con Hub',
     },
     loader: {
       label: 'Preparando destinos',
@@ -37,6 +38,7 @@ export const translations = {
       cta: 'Solicitar información',
       contactMessage:
         '¡Hola Hub Travel! 👋 Quiero saber más sobre Maxi Games 2026 y los destinos disponibles como premios. ¿Me cuentan los detalles?',
+      partnerText: 'Todos los destinos los encontrás en',
       copyright: '© 2026 Hub Travel',
       disclaimer:
         'Tarifas en pesos argentinos por persona, sujetas a disponibilidad.',
@@ -47,6 +49,7 @@ export const translations = {
       intro: 'Intro',
       languageLabel: 'EN',
       languageSwitch: 'ES',
+      external: 'Travel with Hub',
     },
     loader: {
       label: 'Preparing destinations',
@@ -80,6 +83,7 @@ export const translations = {
       cta: 'Request information',
       contactMessage:
         'Hi Hub Travel! 👋 I want to know more about Maxi Games 2026 and the travel prizes. Could you share the details?',
+      partnerText: 'Find all destinations at',
       copyright: '© 2026 Hub Travel',
       disclaimer:
         'Fares in Argentine pesos per person, subject to availability.',
