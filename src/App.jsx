@@ -17,6 +17,10 @@ function MaxiGames() {
     useHorizontalScroll();
 
   useEffect(() => {
+    document.title = 'Hubtravel';
+  }, []);
+
+  useEffect(() => {
     const t = setTimeout(() => setLoading(false), 2000);
     return () => clearTimeout(t);
   }, []);
@@ -29,35 +33,48 @@ function MaxiGames() {
     setActiveIndex(idx);
   }, [progress]);
 
-  // En mobile detectamos el panel visible con IntersectionObserver
+  // En mobile detectamos el panel visible por scroll
   useEffect(() => {
     const isMobile = () => window.matchMedia('(max-width: 900px)').matches;
     if (!isMobile()) return;
 
-    const ratios = new Map();
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          const idx = Number(entry.target.dataset.panelIndex);
-          ratios.set(idx, entry.intersectionRatio);
-        });
-        let bestIdx = -1;
-        let bestRatio = 0;
-        ratios.forEach((ratio, idx) => {
-          if (ratio > bestRatio) {
-            bestRatio = ratio;
-            bestIdx = idx;
-          }
-        });
-        setActiveIndex(bestIdx);
-      },
-      { threshold: [0, 0.2, 0.4, 0.6, 0.8, 1] }
-    );
+    let raf = null;
+    const update = () => {
+      raf = null;
+      // Si estamos casi en el tope, es la intro
+      if (window.scrollY < 80) {
+        setActiveIndex(-1);
+        return;
+      }
+      const center = window.innerHeight * 0.4;
+      const panels = document.querySelectorAll('[data-panel-index]');
+      let visibleIdx = -1;
+      panels.forEach((p) => {
+        const rect = p.getBoundingClientRect();
+        if (rect.top <= center && rect.bottom > center) {
+          visibleIdx = Number(p.dataset.panelIndex);
+        }
+      });
+      setActiveIndex(visibleIdx);
+    };
 
-    const panels = document.querySelectorAll('[data-panel-index]');
-    panels.forEach((p) => observer.observe(p));
+    const onScroll = () => {
+      if (raf) return;
+      raf = requestAnimationFrame(update);
+    };
 
-    return () => observer.disconnect();
+    window.addEventListener('scroll', onScroll, { passive: true });
+    document.addEventListener('scroll', onScroll, {
+      passive: true,
+      capture: true,
+    });
+    update();
+
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+      document.removeEventListener('scroll', onScroll, true);
+      if (raf) cancelAnimationFrame(raf);
+    };
   }, []);
 
   return (
