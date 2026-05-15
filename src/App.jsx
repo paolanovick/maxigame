@@ -17,7 +17,7 @@ function MaxiGames() {
     useHorizontalScroll();
 
   useEffect(() => {
-    document.title = 'Hubtravel';
+    document.title = 'Hubtravel.fun';
   }, []);
 
   useEffect(() => {
