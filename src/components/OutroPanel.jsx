@@ -3,6 +3,8 @@ import { useLang } from '../i18n/LanguageContext';
 import { buildWhatsappUrl } from '../utils/whatsapp';
 import styles from './OutroPanel.module.css';
 
+const TERMS_PDF_URL = '/terminos-y-condiciones.pdf';
+
 export default function OutroPanel({ index }) {
   const { t } = useLang();
 
@@ -111,8 +113,20 @@ export default function OutroPanel({ index }) {
             />
           </div>
           <div className={styles.footerText}>
-            <span>{t.outro.copyright}</span>
-            <span>{t.outro.disclaimer}</span>
+            <span className={styles.footerMeta}>
+              <span>{t.outro.copyright}</span>
+              <span className={styles.footerMetaDivider}>·</span>
+              <span>{t.outro.disclaimer}</span>
+              <span className={styles.footerMetaDivider}>·</span>
+              <a
+                href={TERMS_PDF_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.footerLink}
+              >
+                {t.outro.terms}
+              </a>
+            </span>
           </div>
         </div>
       </div>

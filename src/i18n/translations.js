@@ -42,6 +42,7 @@ export const translations = {
       copyright: '© 2026 Hub Travel',
       disclaimer:
         'Tarifas en USD por persona, sujetas a disponibilidad.',
+      terms: 'Términos y condiciones',
     },
   },
   en: {
@@ -87,6 +88,7 @@ export const translations = {
       copyright: '© 2026 Hub Travel',
       disclaimer:
         'Fares in USD per person, subject to availability.',
+      terms: 'Terms & Conditions',
     },
   },
 };

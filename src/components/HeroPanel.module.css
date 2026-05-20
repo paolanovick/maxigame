@@ -48,7 +48,7 @@
   line-height: 0.92;
   letter-spacing: -0.035em;
   color: var(--color-ink);
-  max-width: 7.2ch;
+  max-width: 8.6ch;
 }
 
 .titleRow {
@@ -59,6 +59,7 @@
 
 .titleWord {
   display: inline-block;
+  white-space: nowrap;
 }
 
 .titleItalic {
