@@ -21,7 +21,7 @@ export const translations = {
     },
     destino: {
       includesEyebrow: 'te lleva...',
-      faresFrom: 'Desde',
+      faresFrom: 'Tarifas desde',
       perPerson: 'por persona',
       duration: 'Duración',
       contact: 'Contacto',
