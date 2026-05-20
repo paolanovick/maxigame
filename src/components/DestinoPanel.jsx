@@ -69,7 +69,7 @@ export default function DestinoPanel({ destino, index, isActive }) {
           <div className={styles.precio}>
             <span className={styles.precioLabel}>{t.destino.faresFrom}</span>
             <span className={styles.precioMonto}>
-              <span className={styles.precioCurrency}>ARS</span>
+              <span className={styles.precioCurrency}>USD</span>
               {destino.precio}
             </span>
             <span className={styles.precioPersona}>

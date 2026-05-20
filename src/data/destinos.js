@@ -10,7 +10,7 @@ export const destinos = [
     id: "calafate",
     numero: "01",
     hoverStyle: "glass",
-    precio: "1.226.250",
+    precio: "875",
     duracion: { es: "4 días / 3 noches", en: "4 days / 3 nights" },
     nombre: { es: "El Calafate", en: "El Calafate" },
     subtitulo: {
@@ -82,7 +82,7 @@ export const destinos = [
     id: "ushuaia",
     numero: "02",
     hoverStyle: "glass",
-    precio: "1.297.500",
+    precio: "900",
     duracion: { es: "4 días / 3 noches", en: "4 days / 3 nights" },
     nombre: { es: "Ushuaia", en: "Ushuaia" },
     subtitulo: {
@@ -157,7 +157,7 @@ export const destinos = [
   {
     id: "iguazu",
     numero: "03",
-    precio: "800.000",
+    precio: "570",
     duracion: { es: "4 días / 3 noches", en: "4 days / 3 nights" },
     nombre: { es: "Iguazú", en: "Iguazú" },
     subtitulo: {
@@ -231,7 +231,7 @@ export const destinos = [
     id: "salta",
     numero: "04",
     hoverStyle: "glass",
-    precio: "997.500",
+    precio: "700",
     duracion: { es: "4 días / 3 noches", en: "4 days / 3 nights" },
     nombre: { es: "Salta", en: "Salta" },
     subtitulo: { es: "Clásico del Norte", en: "Northern Classic" },
@@ -299,7 +299,7 @@ export const destinos = [
   {
     id: "mendoza",
     numero: "05",
-    precio: "950.000",
+    precio: "670",
     duracion: { es: "4 días / 3 noches", en: "4 days / 3 nights" },
     nombre: { es: "Mendoza", en: "Mendoza" },
     subtitulo: {
@@ -371,7 +371,7 @@ export const destinos = [
   {
     id: "buenosaires",
     numero: "06",
-    precio: "842.500",
+    precio: "600",
     duracion: { es: "4 días / 3 noches", en: "4 days / 3 nights" },
     nombre: { es: "Buenos Aires", en: "Buenos Aires" },
     subtitulo: { es: "City Tour Premium", en: "Premium City Tour" },

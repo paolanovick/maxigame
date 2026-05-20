@@ -35,7 +35,7 @@
   top: 24px;
   left: 28px;
   transform: translate(0, 0);
-  width: 290px;
+  width: clamp(220px, 17vw, 280px);
 }
 
 /* Logo secundario Maxi Games — aparece tras el morphing */
@@ -45,9 +45,9 @@
   pointer-events: none;
   display: flex;
   align-items: center;
-  gap: 14px;
-  top: 165px;
-  left: 40px;
+  gap: 10px;
+  top: 40px;
+  left: 320px;
   transition: filter 0.5s ease;
 }
 
@@ -61,29 +61,43 @@
 
 .secondaryDivider {
   width: 1px;
-  height: 40px;
+  height: 28px;
   background: currentColor;
   opacity: 0.25;
 }
 
 .secondary img {
-  width: 110px;
+  width: 74px;
   height: auto;
   display: block;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1520px) {
   .loaded {
-    width: 240px;
+    width: 250px;
   }
 
   .secondary {
-    top: 140px;
-    left: 36px;
+    left: 286px;
   }
 
   .secondary img {
-    width: 95px;
+    width: 66px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .loaded {
+    width: 220px;
+  }
+
+  .secondary {
+    top: 38px;
+    left: 250px;
+  }
+
+  .secondary img {
+    width: 58px;
   }
 }
 

@@ -21,7 +21,7 @@ export const translations = {
     },
     destino: {
       includesEyebrow: 'te lleva...',
-      faresFrom: 'Tarifas desde',
+      faresFrom: 'Desde',
       perPerson: 'por persona',
       duration: 'Duración',
       contact: 'Contacto',
@@ -41,7 +41,7 @@ export const translations = {
       partnerText: 'Todos los destinos los encontrás en',
       copyright: '© 2026 Hub Travel',
       disclaimer:
-        'Tarifas en pesos argentinos por persona, sujetas a disponibilidad.',
+        'Tarifas en USD por persona, sujetas a disponibilidad.',
     },
   },
   en: {
@@ -66,7 +66,7 @@ export const translations = {
     },
     destino: {
       includesEyebrow: 'takes you...',
-      faresFrom: 'Fares from',
+      faresFrom: 'From',
       perPerson: 'per person',
       duration: 'Duration',
       contact: 'Contact',
@@ -86,7 +86,7 @@ export const translations = {
       partnerText: 'Find all destinations at',
       copyright: '© 2026 Hub Travel',
       disclaimer:
-        'Fares in Argentine pesos per person, subject to availability.',
+        'Fares in USD per person, subject to availability.',
     },
   },
 };
