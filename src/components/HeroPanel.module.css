@@ -23,11 +23,11 @@
 .left {
   position: relative;
   z-index: 2;
-  padding: 64px clamp(40px, 4vw, 64px) 64px clamp(260px, 20vw, 360px);
+  padding: 148px clamp(40px, 4vw, 64px) 56px clamp(64px, 7vw, 120px);
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  gap: 32px;
+  justify-content: flex-start;
+  gap: 24px;
   min-width: 0;
 }
 
@@ -139,7 +139,7 @@
 
 @media (max-width: 1200px) {
   .left {
-    padding: 56px 40px 56px 260px;
+    padding: 132px 40px 48px 56px;
     gap: 24px;
   }
 
@@ -154,9 +154,9 @@
 
 @media (max-height: 820px) and (min-width: 901px) {
   .left {
-    padding-top: 44px;
-    padding-bottom: 44px;
-    gap: 20px;
+    padding-top: 126px;
+    padding-bottom: 36px;
+    gap: 18px;
   }
 
   .title {
