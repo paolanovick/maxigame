@@ -23,7 +23,7 @@
 .left {
   position: relative;
   z-index: 2;
-  padding: 148px clamp(40px, 4vw, 64px) 56px clamp(64px, 7vw, 120px);
+  padding: 148px clamp(40px, 4vw, 64px) 56px clamp(300px, 24vw, 380px);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -139,7 +139,7 @@
 
 @media (max-width: 1200px) {
   .left {
-    padding: 132px 40px 48px 56px;
+    padding: 132px 40px 48px 250px;
     gap: 24px;
   }
 
