@@ -4,7 +4,7 @@ import { destinos } from '../data/destinos';
 import { useLang, pickLang } from '../i18n/LanguageContext';
 import styles from './SideNav.module.css';
 
-const HUB_URL = 'https://hubtravel.travelconnect.com.ar';
+const HUB_URL = 'https://www.hubtravel.com';
 
 export default function SideNav({
   progress,
