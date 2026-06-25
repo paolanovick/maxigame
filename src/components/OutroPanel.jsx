@@ -12,7 +12,7 @@ export default function OutroPanel({ index }) {
     <section className={styles.outro} data-panel-index={index}>
       <div className={styles.inner}>
         <motion.a
-          href="https://hubtravel.travelconnect.com.ar"
+          href="https://hubtravel.com.ar"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.partnerLink}
