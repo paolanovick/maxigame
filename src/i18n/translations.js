@@ -26,7 +26,7 @@ export const translations = {
       duration: 'Duración',
       contact: 'Contacto',
       contactMessage: (destino) =>
-        `¡Hola Hub Travel! 👋 Estoy participando de Maxi Games 2026 y me interesa el premio a ${destino}. ¿Me podés dar más información sobre fechas, condiciones y disponibilidad? ¡Gracias!`,
+        `¡Hola Hub Travel! 👋 Estoy participando de Maxi Games 2026 y me interesa el viaje a ${destino}. ¿Me podés dar más información sobre fechas, condiciones y disponibilidad? ¡Gracias!`,
     },
     outro: {
       eyebrow: '¿Listo para tu premio?',
@@ -37,7 +37,7 @@ export const translations = {
         'Cada destino es una oportunidad de empezar a coleccionar momentos. Maxi Games convierte tus puntos en experiencias inolvidables.',
       cta: 'Solicitar información',
       contactMessage:
-        '¡Hola Hub Travel! 👋 Quiero saber más sobre Maxi Games 2026 y los destinos disponibles como premios. ¿Me cuentan los detalles?',
+        '¡Hola Hub Travel! 👋 Quiero saber más sobre Maxi Games 2026 y los viajes disponibles. ¿Me cuentan los detalles?',
       partnerText: 'Todos los destinos los encontrás en',
       copyright: '© 2026 Hub Travel',
       disclaimer:
@@ -72,7 +72,7 @@ export const translations = {
       duration: 'Duration',
       contact: 'Contact',
       contactMessage: (destino) =>
-        `Hi Hub Travel! 👋 I'm taking part in Maxi Games 2026 and I'm interested in the ${destino} prize. Could you share more info about dates, conditions and availability? Thanks!`,
+        `Hi Hub Travel! 👋 I'm taking part in Maxi Games 2026 and I'm interested in the trip to ${destino}. Could you share more info about dates, conditions and availability? Thanks!`,
     },
     outro: {
       eyebrow: 'Ready to claim your prize?',
@@ -83,7 +83,7 @@ export const translations = {
         'Every destination is a chance to start collecting moments. Maxi Games turns your points into unforgettable experiences.',
       cta: 'Request information',
       contactMessage:
-        'Hi Hub Travel! 👋 I want to know more about Maxi Games 2026 and the travel prizes. Could you share the details?',
+        'Hi Hub Travel! 👋 I want to know more about Maxi Games 2026 and the available trips. Could you share the details?',
       partnerText: 'Find all destinations at',
       copyright: '© 2026 Hub Travel',
       disclaimer:
